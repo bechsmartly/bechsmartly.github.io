@@ -1,0 +1,635 @@
+
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html">
+  <title>Welcome to Bech Smartly</title>
+  <!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet"> 
+  <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+  <script type="text/javascript" src="js/jssor.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.js"></script>
+ <link href='http://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+     
+    <section id="feature" >
+        
+           <div class="center">
+                <center><h1> <img class="img-responsive img-center" src="images/BechSmartly_logo.png" width="170px" height="80"></h1></center>
+                <p class="lead"style="color:#F0573E;">Seekh Kar Bech, Smartly Bech</p><br>
+                  
+				  
+				  
+				  
+				  
+				   <script>
+        jssor_slider1_starter = function (containerId) {
+        
+            var _SlideshowTransitions = [
+            //Fade Fly in R
+            {$Duration: 1200, x: -0.3, $During: { $Left: [0.3, 0.7] }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2, $Outside: true }
+            //Fade Fly out L
+            , { $Duration: 1200, x: 0.3, $SlideOut: true, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2, $Outside: true }
+            ];
+
+          
+            var _CaptionTransitions = [];
+            _CaptionTransitions["L"] = { $Duration: 800, x: 0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+            _CaptionTransitions["R"] = { $Duration: 800, x: -0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+            _CaptionTransitions["T"] = { $Duration: 800, y: 0.6, $Easing: { $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+            _CaptionTransitions["B"] = { $Duration: 800, y: -0.6, $Easing: { $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+            _CaptionTransitions["TL"] = { $Duration: 800, x: 0.6, y: 0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine, $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+            _CaptionTransitions["TR"] = { $Duration: 800, x: -0.6, y: 0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine, $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+            _CaptionTransitions["BL"] = { $Duration: 800, x: 0.6, y: -0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine, $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+            _CaptionTransitions["BR"] = { $Duration: 800, x: -0.6, y: -0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine, $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+
+            _CaptionTransitions["CLIP|LR"] = { $Duration: 600, $Clip: 3, $Easing: $JssorEasing$.$EaseInOutCubic };
+            _CaptionTransitions["MCLIP|L"] = { $Duration: 600, $Clip: 1, $Move: true, $Easing: $JssorEasing$.$EaseInOutCubic };
+            _CaptionTransitions["LISTH|L"] = { $Duration: 1000, x: 0.8, $Clip: 1, $Easing: $JssorEasing$.$EaseInOutCubic, $ScaleClip: 0.8, $Opacity: 2, $During: { $Left: [0.4, 0.6], $Clip: [0, 0.4], $Opacity: [0.4, 0.6]} };
+            _CaptionTransitions["WAVE|L"] = { $Duration: 1300, x: 0.6, y: 0.3, $Easing: { $Left: $JssorEasing$.$EaseLinear, $Top: $JssorEasing$.$EaseInWave }, $Opacity: 2, $Round: { $Top: 2.5} };
+            _CaptionTransitions["JUMPDN|R"] = { $Duration: 1000, x: -0.6, y: 0.4, $Easing: { $Left: $JssorEasing$.$EaseLinear, $Top: $JssorEasing$.$EaseOutJump }, $Round: { $Top: 1.5} };
+            _CaptionTransitions["DDG|TR"] = { $Duration: 1200, x: -0.3, y: 0.3, $Zoom: 1, $Easing: { $Left: $JssorEasing$.$EaseInJump, $Top: $JssorEasing$.$EaseInJump }, $Opacity: 2, $During: { $Left: [0, 0.8], $Top: [0, 0.8] }, $Round: { $Left: 0.8, $Top: 0.8} };
+            _CaptionTransitions["DODGEDANCE|L"] = { $Duration: 1200, x: 0.3, y: -0.3, $Zoom: 1, $Easing: { $Left: $JssorEasing$.$EaseInJump, $Top: $JssorEasing$.$EaseInJump, $Zoom: $JssorEasing$.$EaseOutQuad }, $Opacity: 2, $During: { $Left: [0, 0.8], $Top: [0, 0.8] }, $Round: { $Left: 0.8, $Top: 2.5} };
+            _CaptionTransitions["FLUTTER|L"] = { $Duration: 600, x: 0.2, y: -0.1, $Easing: { $Left: $JssorEasing$.$EaseLinear, $Top: $JssorEasing$.$EaseInWave }, $Opacity: 2, $Round: { $Top: 1.3} };
+            _CaptionTransitions["TORTUOUS|VB"] = { $Duration: 1200, y: -0.2, $Zoom: 1, $Easing: { $Top: $JssorEasing$.$EaseOutWave, $Zoom: $JssorEasing$.$EaseOutCubic }, $Opacity: 2, $During: { $Top: [0, 0.7] }, $Round: { $Top: 1.3} };
+            _CaptionTransitions["FADE"] = { $Duration: 600, $Opacity: 2 };
+            _CaptionTransitions["ZMF|10"] = { $Duration: 600, $Zoom: 11, $Easing: { $Zoom: $JssorEasing$.$EaseInExpo, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 };
+            _CaptionTransitions["RTT|10"] = { $Duration: 600, $Zoom: 11, $Rotate: 1, $Easing: { $Zoom: $JssorEasing$.$EaseInExpo, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInExpo }, $Opacity: 2, $Round: { $Rotate: 0.8} };
+            _CaptionTransitions["RTTL|BR"] = { $Duration: 600, x: -0.6, y: -0.6, $Zoom: 11, $Rotate: 1, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Top: $JssorEasing$.$EaseInCubic, $Zoom: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInCubic }, $Opacity: 2, $Round: { $Rotate: 0.8} };
+
+            var options = {
+                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $AutoPlaySteps: 1,                                  //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
+                $AutoPlayInterval: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                $PauseOnHover: 1,                               //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+
+                $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+                $SlideDuration: 500,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+                //$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+                //$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+                $SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
+                $DisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+                $ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+                $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+                $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
+                $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+
+                $SlideshowOptions: {                                //[Optional] Options to specify and enable slideshow or not
+                    $Class: $JssorSlideshowRunner$,                 //[Required] Class to create instance of slideshow
+                    $Transitions: _SlideshowTransitions,            //[Required] An array of slideshow transitions to play slideshow
+                    $TransitionsOrder: 1,                           //[Optional] The way to choose transition to play slide, 1 Sequence, 0 Random
+                    $ShowLink: true                                    //[Optional] Whether to bring slide link on top of the slider when slideshow is running, default value is false
+                },
+
+                $CaptionSliderOptions: {                            //[Optional] Options which specifies how to animate caption
+                    $Class: $JssorCaptionSlider$,                   //[Required] Class to create instance to animate caption
+                    $CaptionTransitions: _CaptionTransitions,       //[Required] An array of caption transitions to play caption, see caption transition section at jssor slideshow transition builder
+                    $PlayInMode: 1,                                 //[Optional] 0 None (no play), 1 Chain (goes after main slide), 3 Chain Flatten (goes after main slide and flatten all caption animations), default value is 1
+                    $PlayOutMode: 3                                 //[Optional] 0 None (no play), 1 Chain (goes before main slide), 3 Chain Flatten (goes before main slide and flatten all caption animations), default value is 1
+                },
+
+                $BulletNavigatorOptions: {                                //[Optional] Options to specify and enable navigator or not
+                    $Class: $JssorBulletNavigator$,                       //[Required] Class to create navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $ActionMode: 3,                                 //[Optional] 0 None, 1 act by click, 2 act by mouse hover, 3 both, default value is 1
+                    $Lanes: 2,                                      //[Optional] Specify lanes to arrange items, default value is 1
+                    $SpacingX: 10,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
+                    $SpacingY: 10                                    //[Optional] Vertical space between each item in pixel, default value is 0
+                },
+
+                $ArrowNavigatorOptions: {
+                    $Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
+                    $ChanceToShow: 1                                //[Required] 0 Never, 1 Mouse Over, 2 Always
+                },
+
+                $ThumbnailNavigatorOptions: {
+                    $Class: $JssorThumbnailNavigator$,              //[Required] Class to create thumbnail navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $ActionMode: 0,                                 //[Optional] 0 None, 1 act by click, 2 act by mouse hover, 3 both, default value is 1
+                    $DisableDrag: true,                             //[Optional] Disable drag or not, default value is false
+                    $Orientation: 2                                 //[Optional] Orientation to arrange thumbnails, 1 horizental, 2 vertical, default value is 1
+                }
+            };
+
+            var jssor_slider1 = new $JssorSlider$(containerId, options);
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizes
+            function ScaleSlider() {
+                var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+                if (parentWidth)
+                    jssor_slider1.$ScaleWidth(Math.max(parentWidth, 600));
+                else
+                    $Jssor$.$Delay(ScaleSlider, 30);
+            }
+
+            ScaleSlider();
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+
+            $Jssor$.$AddEvent(window, "resize", $Jssor$.$WindowResizeFilter(window, ScaleSlider));
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            //responsive code end
+        }
+    </script>
+    <!-- Jssor Slider Begin -->
+    <!-- To move inline styles to css file/block, please specify a class name for each element. --> 
+    <div id="slider1_container" style="position: relative; width: 1800px;
+        height: 270px;">
+
+        <!-- Loading Screen -->
+        <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+                background-color: #000; top: 0px; left: 0px;width: 100%;height:100%;">
+            </div>
+            <div style="position: absolute; display: block; background: url(../img/loading.gif) no-repeat center center;
+                top: 0px; left: 0px;width: 100%;height:100%;">
+            </div>
+        </div>
+
+        <!-- Slides Container -->
+        <div u="slides" style="cursor: move; position: relative;left: -10px; top: 0px; width: 2000px; height: 270px;
+            overflow: hidden;">
+            <div>
+                <img u=image src="images/banner2.png" />
+                <div u="thumb">Successful Business Is Someone's Courageous Decision.</div>
+               </div>
+            
+            
+            <div>
+                <img u=image src="images/banner1.png" />
+                <div u="thumb">The Secret Of Business Is To Know Something That Nobody Else Knows.</div>
+                 </div>
+            <div>
+                <img u=image src="images/banner4.png" />
+                <div u="thumb" >We Shape Our Tools And Then Our Tools Shape Us.
+				</div>
+                </div>
+            <div>
+                <img u=image src="images/banner3.png" />
+                <div u="thumb">Happy Living Needs Successful Business and Successful Business Needs Happy life.</div>
+                 </div>
+            
+        </div>
+
+        <!--#region Thumbnail Navigator Skin Begin -->
+        <!-- Help: http://www.jssor.com/development/slider-with-thumbnail-navigator-jquery.html -->
+        <!-- thumbnail navigator container -->
+        <div u="thumbnavigator" class="jssort09" style="position: absolute; bottom: 100px; left: -10px; height:100px; width:2000px;">
+            <div style="filter: alpha(opacity=40); opacity:0.4; position: absolute; display: block;
+                background-color: #000000; top: 0px; left: 0px; width: 100%; height: 100%;">
+            </div>
+            <!-- Thumbnail Item Skin Begin -->
+            <div u="slides">
+                <div u="prototype" style="POSITION: absolute; WIDTH: 2000px; HEIGHT: 60px; TOP: 0; LEFT: 0;">
+                    <div u="thumbnailtemplate" style="  font-weight: normal; POSITION: absolute;WIDTH: 100%; HEIGHT: 100%; TOP: 0; LEFT:0px; RIGHT:0px; color:#fff; line-height: 60px; font-size:40px; padding-left:10px;"></div>
+                </div>
+            </div>
+            <!-- Thumbnail Item Skin End -->
+        </div>
+       <style>
+            /* jssor slider bullet navigator skin 01 css */
+            /*
+            .jssorb01 div           (normal)
+            .jssorb01 div:hover     (normal mouseover)
+            .jssorb01 .av           (active)
+            .jssorb01 .av:hover     (active mouseover)
+            .jssorb01 .dn           (mousedown)
+            */
+            .jssorb01 {
+                position: absolute;
+            }
+            .jssorb01 div, .jssorb01 div:hover, .jssorb01 .av {
+                position: absolute;
+                /* size of bullet elment */
+                width: 12px;
+                height: 12px;
+                filter: alpha(opacity=70);
+                opacity: .7;
+                overflow: hidden;
+                cursor: pointer;
+                border: #000 1px solid;
+            }
+            .jssorb01 div { background-color: gray; }
+            .jssorb01 div:hover, .jssorb01 .av:hover { background-color: #d3d3d3; }
+            .jssorb01 .av { background-color: #fff; }
+            .jssorb01 .dn, .jssorb01 .dn:hover { background-color: #555555; }
+        </style>
+        <!-- bullet navigator container -->
+        <div u="navigator" class="jssorb01" style="bottom: 16px;">
+            <!-- bullet navigator item prototype -->
+            <div u="prototype"></div>
+        </div>
+        <!--#endregion Bullet Navigator Skin End -->
+        
+        <!--#region Arrow Navigator Skin Begin -->
+       <a style="display: none" href="http://www.jssor.com">Bootstrap Slider</a>
+        <!-- Trigger -->
+        <script>
+            jssor_slider1_starter('slider1_container');
+        </script>
+    </div>
+    <!-- Jssor Slider End -->
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+                <h2 style="font-family: 'Didact Gothic', sans-serif; margin-top: 36px;">Initiative To Educate & Empower</h2>
+                <p class="lead" style="font-family: 'Didact Gothic', sans-serif; font-size:16px;">Existing Service Providers, Retailers, Consultants & Budding Entrepreneurs 
+With</p>
+            <h2 style="font-family: 'Didact Gothic', sans-serif;">Awareness, Knowledge, Tools & Technologies</h2>
+            <p class="lead" style="margin-bottom:10px; font-family: 'Didact Gothic', sans-serif; font-size:16px;">To Grow In Their Businesses & Careers</p>
+            <p class="lead" style="font-family: 'Didact Gothic', sans-serif; font-size:16px;">There Is Always A Better Way To Sell. The Trends Has Changed And Consumer Requirements Are Changing Fast…</p>
+         
+
+       
+        </div>
+    </section>  
+    <section class="who_are_we">
+        <div class="container">
+           <div class="center wow fadeInDown">
+                <h2 style="color:#34F5A8;">What We Do</h2>
+                <p style="padding: 2% 0 0 0; text-align:left; text-align: justify; color:#fff;"><strong>TakeOff Ventures</strong> has taken an initiative to help streamline the service sector of India. We all know service sector is one of the biggest revenue generator for majority of indian entrepreneurs. Our existing and budding service providers need better awareness about consumer <strong>needs & behaviour, new tools, trends and technologies</strong> to deliver better  and fast service delivery, to become a part of an organised service sector. </p>
+                <p style="padding: 0%; text-align:left; color:#fff;">We help them to get <strong>Aware, Learn & Implement</strong> these tools & trends in their existing businesses to grow fast. </p>
+                <p  style="padding: 0%; text-align:left; color:#fff;">Every service provider has various <strong>doubts and queries,</strong> We not only answer these questions, but we also help them understand how they can overcome the challenges to improve their productivity thus resulting in better <strong>customer satisfaction, more sales & more revenues.</strong>
+            </div>
+
+              
+        </div>
+    </section>  
+     
+    <div class="work_port">
+<center><h2 style="font-family: 'Raleway', sans-serif; color: #34F5A8;  font-size: 30px; margin: 0px;
+background: #23A38F;padding-bottom: 63px;">Why We Do</h2></center>
+<div class="col-md-6" style="padding:0;"><img src="images/Visiting-Card-Back-Side.png" width="100%" Height="355px;"></div>
+<div class="col-md-6" style="background: #F4F4F4; padding:20px 20px; height:355px;">
+     <li  style="padding-bottom:15px; margin-left:20px;">Creating Awareness about  New tools, trends, technologies</li>
+     <li  style="padding-bottom:15px; margin-left:20px;">What is the benefit of each of them </li>
+      <li  style="padding-bottom:15px; margin-left:20px;">Almost 75% of prospective property buyers do a search online before they start</li>
+      <li  style="padding-bottom:15px; margin-left:20px;">Almost 75% of prospective property buyers do a search online before they start</li>
+      <li  style="padding-bottom:15px; margin-left:20px;">How to implement them for best results.</li>
+      <li  style="padding-bottom:15px; margin-left:20px;">How to keep updated</li>
+      </div>
+  </div>
+  <br><br>
+ <div id="shadow">
+         
+            <div class="sections sections-padding-b-50">
+    <div class="container">
+      <center><h3 style="font-size:30px;color:#16AE72;font-weight: bold;padding-top: 40px;">How We Do</h3></center>
+      <br><br><br>
+
+      <div class="row" style="height:197px;">
+        
+                <div class="content-top">
+                  <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="content-container">
+                            <i class="settings"><img src="images/seminar_icon.png"> </i>
+                            <img src="images/1.png" alt="" />
+                            <div class="desc">
+                                 <h2>Seminars </h2>
+                                <p>Grank an ISO 9001:2008 certified company is established in the year 2010 and now it is a leading Digital Media Marketing Company that is authorized by Google.We are specialized in helping businesses to be more successful and also engaged . </p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="content-container">
+                            <i class="clock"><img src="images/team_training.png"> </i>
+                           <img src="images/2.png" alt="" />
+                            
+                            <div class="desc">
+                                 <h2>Trainings</h2>
+                                 <p>Grank an ISO 9001:2008 certified company is established in the year 2010 and now it is a leading Digital Media Marketing Company that is authorized by Google.We are specialized in helping businesses to be more successful and also engaged . </p>
+                            </div>
+                        </div>
+                    </div>     
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="content-container">
+                            <i class="plane"> <img src="images/consultation.png"></i>
+                            
+                             <img src="images/3.png" alt="" />
+                            <div class="desc">
+                                 <h2>Consultations </h2>
+                                 <p>Grank an ISO 9001:2008 certified company is established in the year 2010 and now it is a leading Digital Media Marketing Company that is authorized by Google.We are specialized in helping businesses to be more successful and also engaged . </p>
+                            </div>
+                        </div>
+                    </div>
+                     
+          </div>
+      </div>
+     </div>
+     <br><br>
+
+  <section id="services" class="service-item" style="background:#000 url(images/services.png); height: 790px;">
+       <div class="container">
+            <div class="center wow fadeInDown">
+                <h2 style="padding-bottom:30px;">Who Can Benefit</h2>
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="media services-wrap wow fadeInDown">
+                        <div class="pull-left">
+                            <img class="img-responsive" src="images/real_state.png">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Real Estate consultants</h3>
+                            <p>We Measure, Collect, Analyze & Report Internet Data</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="media services-wrap wow fadeInDown">
+                        <div class="pull-left">
+                            <img class="img-responsive" src="images/life-insurance.png">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Insurance Agents</h3>
+                            <p>We Track Various Responses & Help Create Goodwill</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="media services-wrap wow fadeInDown">
+                        <div class="pull-left">
+                            <img class="img-responsive" src="images/travel_fun_icon.png">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Travel Agents</h3>
+                            <p>Customize Your Approach & Heighten Your Brand Value</p>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="media services-wrap wow fadeInDown">
+                        <div class="pull-left">
+                            <img class="img-responsive" src="images/job-seeker.png">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Job Seekers</h3>
+                            <p>Our Expert Developers Will Make Your Website.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="media services-wrap wow fadeInDown">
+                        <div class="pull-left">
+                            <img class="img-responsive" src="images/retaler.png">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Retailers</h3>
+                            <p>Use Of Social Media To Heighten Your Presence & Scale</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="media services-wrap wow fadeInDown">
+                        <div class="pull-left">
+                            <img class="img-responsive" src="images/corporates.png">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Corporates</h3>
+                            <p>We Help You Better Understand Your Customer</p><br>
+                        </div>
+                    </div>
+                </div>  
+                 <div class="col-sm-6 col-md-4">
+                    <div class="media services-wrap wow fadeInDown">
+                        <div class="pull-left">
+                            <img class="img-responsive" src="images/Budding-Entrepreneurs.png">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Budding Entrepreneurs </h3>
+                            <p>We Help You Better Understand Your Customer</p><br>
+                        </div>
+                    </div>
+                </div> 
+                 <div class="col-sm-6 col-md-4">
+                    <div class="media services-wrap wow fadeInDown">
+                        <div class="pull-left">
+                            <img class="img-responsive" src="images/sales_marketing.png">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Sales & Marketing</h3>
+                            <p>We Help You Better Understand Your Customer</p><br>
+                        </div>
+                    </div>
+                </div> 
+                 <div class="col-sm-6 col-md-4">
+                    <div class="media services-wrap wow fadeInDown">
+                        <div class="pull-left">
+                            <img class="img-responsive" src="images/housewife.png">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Housewifes</h3>
+                            <p>We Help You Better Understand Your Customer</p><br>
+                        </div>
+                    </div>
+                </div>                                               
+            </div><!--/.row-->
+        </div><!--/.container-->
+    </section>
+    <section id="content" style="background:#fff; margin:100px 0;">
+        <div class="container">
+            <div class="row">
+                <h2 style="padding-left: 331px;margin-bottom: 25px; color:#16AE72; font-size:30px;">Past Initiatives</h2>
+                <div class="col-xs-12 col-sm-8 wow fadeInDown">
+                   <div class="tab-wrap"> 
+                        <div class="media">
+                            <div class="parrent pull-left">
+                                <ul class="nav nav-tabs nav-stacked">
+                                    <li  class="active"><a href="#tab1" data-toggle="tab" class="analistic-01">Mumbai Events</a></li>
+                                    <li class=""><a href="#tab2" data-toggle="tab" class="analistic-02">Thane Events</a></li>
+                                    <li class=""><a href="#tab3" data-toggle="tab" class="tehnical">Chennai Events</a></li>
+                                    <li class=""><a href="#tab4" data-toggle="tab" class="tehnical">Builder Events</a></li>
+                                    <li class=""><a href="#tab5" data-toggle="tab" class="analistic-01">Event Videos</a></li>
+                                </ul>
+                            </div>
+                            <div class="parrent media-body">
+                                <div class="tab-content">
+                                    <div class="tab-pane fade" id="tab1">
+                                        <div class="media">
+                                           <div class="pull-left">
+                                                <img class="img-responsive" src="images/events.png">
+                                            </div>
+                                            <div class="media-body">
+                                                 <h2>You Dream It, We Create It</h2>
+                                                 <p>We Help Create Static & Dynamic Websites Based On Your Requirement, Personalized & Customized For Your Brand, To Suit The Needs Of Your Customer & Stand Worthy Of Your Brand. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <div class="tab-pane fade active in" id="tab2">
+                                        <div class="media">
+                                           <div class="pull-left">
+                                                <img class="img-responsive" src="images/events.png">
+                                            </div>
+                                            <div class="media-body">
+                                                 <h2>Marketing Message</h2>
+                                                 <p>Marketing Is All About Getting The Right Message Across The Right People At The Right Time. And Thats Our Team Of Experts Will Help You Do. We Help You Build A Close Connection With your Customers.
+                                                 </p>
+                                            </div>
+                                        </div>
+                                     </div>
+                                     <div class="tab-pane fade" id="tab3">
+                                        <p>Our Designers Build High Quality Creatives That Will Easily Resonate With Your Audience And Help Build Instant Rapport With Your Customers. These Creatives Are Bound To Create Social Media Attention </p>
+                                     </div>
+                                     <div class="tab-pane fade" id="tab4">
+                                        <p>Our Philosophy Is Simple. It Isn't About Us. It Never Was & It Will Never Be. Its About YOU. Your Website, Your Digital Marketing Plan, Your Every Move Should Help You Grow. We Will Listen To What You Like & What Your Goals Are To Determine How We Can Help You Achieve Them.</p>
+                                     </div>
+                                     <div class="tab-pane fade" id="tab5">
+                                        <p></p>No One Wants A Web Site. You Want A Tool To Help You Get New Customers, Serve The Ones You Have Efficiently, And Make More Money. When You Choose To Partner With Alchemist, We Know That You Are Trusting Us With Your Future.  We Take That Responsibility Seriously. We Design Websites & Create Campaign That Work For You.
+                                     </div>
+                                </div>  
+                            </div> 
+                        </div>     
+                    </div>              
+                </div>
+                <div class="col-xs-12 col-sm-4 wow fadeInDown">
+                    <div class="testimonial">
+                        <h2 style="font-size: 30px;">Testimonials</h2>
+                         <div class="media testimonial-inner">
+                            <div class="pull-left">
+                                <img class="img-responsive img-circle" src="images/testimonials1.png">
+                            </div>
+                            <div class="media-body">
+                                <p>The Creative Process That Alchemist Follows Is Amazing.</p>
+                                <span><strong>-Ratan Sethi/</strong> Ratan Sethi Group</span>
+                            </div>
+                         </div>
+
+                         <div class="media testimonial-inner">
+                            <div class="pull-left">
+                                <img class="img-responsive img-circle" src="images/testimonials1.png">
+                            </div>
+                            <div class="media-body">
+                                <p>Working With Bech Smartly Has Been Very Satisfying.</p>
+                                <span><strong>-Amit Shah/</strong> Start Up Connect</span>
+                            </div>
+                         </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="our_partner">
+        <div class="container">
+           <div class="center">
+                <h2 style="color:#16AE72;">Our Partners</h2>
+                <p class="lead desc" style="padding: 2% 0 0 0; text-align:left; text-align: justify;"><strong>TakeOff Ventures</strong> has taken an initiative to help streamline the service sector of India. We all know service sector is one of the biggest revenue generator for majority of indian entrepreneurs. Our existing and budding service providers need better awareness about consumer <strong>needs & behaviour, new tools, trends and technologies</strong> to deliver better  and fast service delivery, to become a part of an organised service sector. </p>
+                
+            </div>
+
+              
+        </div>
+    </section> 
+    <section id="conatcat-info">
+        <div class="container">
+        <div class="col-md-5" style="height:270px; ">
+        <h2 style="margin: 0px 0px 12px 13px; color: #ccc;">About Betch Smartly</h2>
+            <div class="col-sm-12" style="text-align: justify;font-size: 13px;color: #ccc; font-size:13px;"><p >Grank an ISO 9001:2008 certified company is established in the year 2010 and now it is a leading Digital Media Marketing Company that is authorized by Google. We are specialized in helping businesses to be more successful and also engaged in giving them a good rank on the Google page.</p><br>
+                <p><img src="images/facebook_icon.png" style="background: #16AE72;border-radius: 5px;   margin-top: 10px; float:left; margin-right:10px;"></p>
+                 <p><img src="images/twitter_icon.png" style="background: #16AE72;border-radius: 5px;  float:left; margin-right:10px;"></p>
+                 <p><img src="images/google_plush.png" style="background: #16AE72;border-radius: 5px;  float:left; margin-right:10px;"></p>
+                 <p><img src="images/linkedin_icon.png" style="background: #16AE72;border-radius: 5px;  float:left;"></p>
+
+            </div>
+       </div>  
+       <div class="col-md-3" style="height:270px; ">
+        <h2 style="margin: 0 0 20px 13px; color: #ccc;">Contact Us</h2>
+            <div class="col-sm-2"><img src="images/Locator.png" style="background:#16AE72;border-radius: 5px; margin-top: 7px;"></div>
+            <div class="col-sm-10"><p style="color:#ccc; font-size:13px;">TakeOff Ventures has taken an initiative to help streamline the service sector of India.</p></div>
+           
+            <div class="col-sm-2"><img src="images/phone.png" style="background: #16AE72;border-radius: 5px; margin-top: 7px;"></div>
+            <div class="col-sm-10"><p style="color:#ccc; font-size:13px;">(+91) 00000000000</p></div><br><br><br><br><br>
+            <div class="col-sm-2"><img src="images/email.png" style="background: #16AE72;border-radius: 5px;   margin-top: 10px;"></div>
+            <div class="col-sm-10" style="margin-top: 4px;"><p style="color:#ccc; font-size:13px;"><b>Email Account :</b> <br>info@bechsmartly.com</p></div>
+       </div>  
+       <div class="col-sm-3" style="height:270px; width:33%;">
+        <h2 style="margin:0; padding-bottom:10px; color: #ccc;">Get in touch with us </h2>
+        <form>
+            <label><input type="text" class="icon_text" placeholder="Your Name" style="background: url(images/admin.png) no-repeat 8px 11px;"></label>
+             <label><input type="text" class="icon_text" placeholder="Email" style="background: url(images/email_login.png) no-repeat 8px 8px;"></label>
+            <label><textarea class="textarea_aria" placeholder="Message" style="background: url(images/message.png) no-repeat 8px 8px;"></textarea></label>
+
+			<label>
+			<select type="text" class="icon_text" placeholder="select option" style="background: url(images/admin.png) no-repeat 8px 8px;">
+			 <option >Your Interest</option>
+  <option value="seminar" type="text">Seminars</option>
+  <option value="training" type="text">trainings</option>
+  <option value="consultation" type="text">Consultations</option>
+		</select></label>
+			<label ><select id="select_power" type="text" class="icon_text" placeholder="select option" style="background: url(images/admin.png) no-repeat 8px 8px;">
+			  
+	 <option>Your Profession</option>		 
+  <option value="Real Estate Consultants" type="text" >Real Estate Consultants</option>
+  <option value="Insurance Agent" type="text">Insurance Agent</option>
+  <option value="Travel Agent" type="text">Travel Agent</option>
+  <option value="Job Seekers" type="text" >Job Seekers</option>
+  <option value="Retailers" type="text">Retailers</option>
+  <option value="Corporates" type="text">Corporates</option>
+  <option value="Budding Entrepreneurs" type="text">Budding Entrepreneurs</option>
+  <option value="Sales and Marketing" type="text">Sales and Marketing</option>
+   <option value="Houswifes" type="text">Houswifes</option>
+			</select></label>
+			
+			
+  
+			
+			 <button class="sub">Submit</button>
+        </form>
+
+       </div> 
+       </div>
+    </section>
+    <footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6" style="color:#ccc;">
+                    &copy; Designed By Bech Smartly.
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+<script type="text/javascript">
+$(function(){
+  $("#nav a").click(function(e){
+    e.preventDefault();
+    $('html,body').scrollTo(this.hash,this.hash); 
+  });
+});
+</script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/jquery.isotope.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/wow.min.js"></script>
+</body>
+</html>
